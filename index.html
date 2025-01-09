@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Layer | Ghaida Fasya</title>
+  
+  <!-- OpenLayers CSS -->
+  <link href="https://cdn.skypack.dev/ol/ol.css" rel="stylesheet">
+  
+  <!-- Main JS -->
+  <script type="module" src="/controller/main.js" defer></script>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div id="map"></div>
+  
+  <!-- Div untuk menampung informasi lokasi -->
+  <div id="info-container">
+    <h3>Location Information</h3>
+    <p id="location-coordinates">Coordinates: </p>
+    <p id="location-address">Address: </p>
+    <button id="save-btn" disabled>Save Location</button>
+    <button id="refresh-btn">Refresh</button>
+  </div>
+
+  <!-- Div untuk menampilkan daftar lokasi yang sudah disimpan -->
+  <div id="saved-locations">
+    <h3>Saved Locations</h3>
+    <ul id="saved-locations-list"></ul>
+  </div>
+</body>
+</html>

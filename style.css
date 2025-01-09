@@ -1,0 +1,108 @@
+@import "https://cdn.skypack.dev/ol/ol.css";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#info-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 10;
+  width: 250px;
+}
+
+#info-container h3 {
+  margin-top: 0;
+}
+
+#saved-locations {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 10;
+  width: 280px;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.saved-locations-list {
+  display: grid;
+  gap: 15px;
+}
+
+.saved-location {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  font-size: 14px;
+}
+
+.saved-location span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.saved-location p {
+  font-size: 13px;
+  margin: 0;
+  color: #555;
+}
+
+#save-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#save-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+#save-btn:hover {
+  background-color: #45a049;
+}
+
+#refresh-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#refresh-btn:hover {
+  background-color: #d32f2f;
+}
