@@ -179,7 +179,7 @@ function addUserLocationMarker() {
 
           // Show notification for nearest parking
           Swal.fire({
-            title: "Lokasi Parkir Terdekat",
+            title: "Lokasi Terdekat",
             text: `Lokasi terdekat adalah ${nearestLocation.name}.`,
             icon: "info",
           });
